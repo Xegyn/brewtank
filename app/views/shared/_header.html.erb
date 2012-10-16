@@ -1,0 +1,13 @@
+<div class="Header">
+  <div class="HeaderLink">
+    <% if session[:current_user_id] %>
+      <%= link_to "Log Out", new_user_path %>
+    <% else %>
+      <%= link_to "Log In", new_user_path %>
+    <% end %>
+  </div>
+  <div class="HeaderLink">
+    <%= link_to "Sign Up", new_user_path %>
+  </div>
+  <h1><%= link_to "Brew Tank", root_path %></h1>
+</div>

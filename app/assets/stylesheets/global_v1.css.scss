@@ -1,0 +1,45 @@
+/*
+ * Application-wide styles
+ */
+$yellow: #ffe789;
+$brown: #565241;
+
+body {
+  background-color: $yellow;
+  font-family: "Arial";
+  font-size: 14px;
+}
+.MainContainer {
+  margin: 0px auto;
+  width: 960px;
+}
+.Header {
+  background-color: $brown;
+  height: 100px;
+  padding: 0px 20px;
+  border-radius: 15px;
+  color: white;
+  margin-bottom: 10px;
+  
+  h1 {
+    font-size: 28px;
+    line-height: 100px;
+  }
+
+  .HeaderLink {
+    float: right;
+    margin: 0px 5px;
+    line-height: 100px;
+    
+  }
+
+  a, a:visited {
+      color: white;
+      text-decoration: none;
+  }
+}
+.Content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+}
