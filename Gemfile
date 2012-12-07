@@ -43,3 +43,4 @@ end
 # gem 'debugger'
 
 # Custom gems
+gem 'devise'

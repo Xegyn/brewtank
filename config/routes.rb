@@ -1,4 +1,6 @@
 Brewtank::Application.routes.draw do
+  devise_for :users
+
   resources :breweries
 
   resources :users
