@@ -1,5 +1,5 @@
 class BreweriesController < ApplicationController
-  before_filter :authenticate_user!
+  before_filter :is_admin?, :except => [:index]
   # GET /breweries
   # GET /breweries.json
   def index
@@ -80,5 +80,11 @@ class BreweriesController < ApplicationController
       format.html { redirect_to breweries_url }
       format.json { head :no_content }
     end
+  end
+
+  private
+
+  def is_admin?
+    redirect_to breweries_path unless current_user.try(:admin?)
   end
 end
