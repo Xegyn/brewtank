@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe User do
   before do
-    @user = User.create :first_name => 'Carlo', :last_name => 'Stearns', :email => 'carlo.stearns@gmail.com', :password => 'Password1'
+    @user = FactoryGirl.create :user, :first_name => 'Carlo', :last_name => 'Stearns', :email => 'carlo.stearns@gmail.com', :password => 'Password1'
   end
   context "given a valid user" do    
     it "should save" do
